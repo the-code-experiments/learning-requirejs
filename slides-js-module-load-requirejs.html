@@ -75,7 +75,7 @@
 <p style="text-align:left">5. Dependencies listed on the same location =&gt; easy to manage it.</p>
 
 <p style="text-align:left">6. Adoped by popular JS libraries like Dojo, Mootools, jQuery etc.</p>
-</div></div></section></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="fba4edb37a6ad25b3bac35216ce026b2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+</div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="fba4edb37a6ad25b3bac35216ce026b2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
 <h2>Introduction to Require.js</h2>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 839px; left: 80px; top: 140px;" data-block-id="c4826ee9fff0644fe970ae4a3f3bb1e5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
@@ -84,21 +84,35 @@
 <p style="text-align:left">2. Configured dependencies.</p>
 
 <p style="text-align:left">3. We need to use require() and define() methods to load dependencies.</p>
-</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="d311cd03b2d5b5cf98fc71040a64f330"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
-<h2>Modular programming</h2>
+
+<p style="text-align:left">4. Able to load nested dependencies.</p>
+</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="588c219552eecd49fe7cfb0aa6736d97"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Managing the order of dependent files</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 720px; left: 80px; top: 140px;" data-block-id="78556df46d6d11a4a6a8562484897690"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p style="text-align:left">1. Understanding modular programming.</p>
+<div class="sl-block" data-block-type="code" data-block-id="19eb23d1afc34a18069f70475a46fd89" style="min-width: 30px; min-height: 30px; width: 800px; height: 174px; left: 80px; top: 210px;"><div class="sl-block-content" style="z-index: 12;"><pre><code>requirejs.config({
 
-<p style="text-align:left">2. Loading JavaScript files.</p>
+  shim: {
+    'source1': ['dependency1','dependency2'],
+    'source2': ['source1']
+  }
 
-<p style="text-align:left">3. What is AMD?</p>
-
-<p style="text-align:left">4. Introduction to Require.js.</p>
-
-<p style="text-align:left">5. Managing the order of dependence files.</p>
-
-<p style="text-align:left">6. Working examples demo.</p>
+});</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-block-id="369b6356bcdf34dc726f8b72bbf3ddff" style="min-width: 30px; min-height: 30px; width: 800px; height: 100px; left: 80px; top: 420px;"><div class="sl-block-content" style="z-index: 13;"><pre><code>define(["dependency1","dependency2","source1","source2"], function() {
+ 
+);</code></pre></div></div></section></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="519afbd60cdbced7aa2421387121f478"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1><span style="font-size:48px">Thank You</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="394428d1ce82cf871a9b06dbb8036ecf" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 70px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:24px">Slides available at</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="19492fa27637d5fb385f29c7343b42cb" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 109px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="font-size:24px">http://slides.com/ashwinhegde/js-module-load-requirejs/fullscreen</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="07206ef7653cf0fe45aff0f823fee967" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 287px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p><strong>Any Questions?</strong></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="0f8d9ed1d6b403a2174ba3e853b56cde" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 160px; top: 511px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p><span style="font-size:24px">can follow me at: github.com/hegdeashwin</span></p>
 </div></div></section>
 			</div>
 		</div>
