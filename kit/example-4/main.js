@@ -9,7 +9,7 @@ requirejs.config({
 
 	shim: {
 		"gridster": {
-			"depends": ['jquery']
+			deps: ['jquery']
 		}
 	}
 });
