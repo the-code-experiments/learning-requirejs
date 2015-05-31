@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Example 4</title>
+		<link rel="stylesheet" type="text/css" href="styles/jquery.gridster.min.css">
+		<style>
+			.gridster ul {
+				list-style: none;
+			}
+			.gridster ul li {
+				background-color: #c1c1c1;
+  				border: 1px solid grey;
+			}		  
+		</style>
+	</head>
+	<body>
+
+		<h1>Require.js Integration with jQuery.</h1>
+		<hr />
+
+		<div class="gridster">
+			<ul>
+			    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">Grid Box 1</li>
+			    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">Grid Box 2</li>
+			    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">Grid Box 3</li>
+
+			    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">Grid Box 4</li>
+			    <li data-row="2" data-col="2" data-sizex="2" data-sizey="2">Grid Box 5</li>
+
+			    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">Grid Box 6</li>
+			    <li data-row="2" data-col="4" data-sizex="2" data-sizey="1">Grid Box 7</li>
+			</ul>
+		</div>
+
+		<script src="libs/require.js" data-main="main"></script>
+	</body>
+</html>
