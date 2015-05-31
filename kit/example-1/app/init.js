@@ -1,0 +1,3 @@
+printMsg(getHelloWorld());
+
+printMsg(getWelcome());
