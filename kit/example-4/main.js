@@ -9,9 +9,17 @@ requirejs.config({
 
 	shim: {
 		"gridster": {
-			"depends": ['jquery']
+			deps: ['jquery']
 		}
 	}
 });
+
+requirejs.onError = function(err) {
+    if (err.requireType === 'timeout') {
+        alert("error: " + err);
+    } else {
+        throw err;
+    }
+};
 
 requirejs(['app/init']);
