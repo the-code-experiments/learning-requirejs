@@ -1,30 +1,25 @@
-var reqAlpha = requirejs.config({
+requirejs.config({
 	baseUrl: "libs",
 
 	paths: {
-		app: '../app'
-	},
-
-	shim: {
-		"gridster": {
-			deps: ['jquery']
-		}
-	}
-});
-
-var reqBeta = requirejs.config({
-	baseUrl: "libs",
-
-	paths: {
+		app: '../app',
 		jquery: 'jquery',
-		gridster: 'jquery.gridster.min'
+		underscore: 'underscore-min-1-5-2'
 	},
 
 	shim: {
-		"gridster": {
-			deps: ['jquery']
+		'underscore': {
+			exports: '_'
 		}
 	}
 });
 
-reqBeta(['app/init']);
+requirejs.onError = function(err) {
+    if (err.requireType === 'timeout') {
+        alert("error: " + err);
+    } else {
+        throw err;
+    }
+};
+
+requirejs(['app/init']);
