@@ -1,4 +1,4 @@
-define(['./module1', './module2', 'print'], function(module1, module2, print) {
+define(['./module1', './module2', 'libs/print'], function(module1, module2, print) {
 
 	print(module1.getHello());
 
@@ -13,7 +13,7 @@ define(['./module1', './module2', 'print'], function(module1, module2, print) {
 
 // 	var module2 = require('./module2');
 
-// 	var print = require('print');
+// 	var print = require('libs/print');
 
 // 	print(module1.getHello());
 
