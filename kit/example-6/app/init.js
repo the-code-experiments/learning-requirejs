@@ -1,24 +1,15 @@
-define(['underscore', 'jquery', './module1', './module2', 'print'], function(_, $, module1, module2, print) {
+/**
+ *	The goal of this file is to provide the basic understanding:
+ *	-> 	How to library is AMD compliant.
+ *
+ *	How to run this example.
+ *	1. Open Example-6.html in browser.
+ *	2. Press F12, go to console tab.
+ *	3. See the message get displayed on that console tab.
+ */
 
-    print(module1.getHello());
+define(['underscore'], function(_) {
 
-    print(module2.getWelcome());
-
-    console.log(_.first([5, 4, 3, 2, 1]));
+	console.log("First element from Array: ", _.first([5, 4, 3, 2, 1]));
 
 });
-
-
-// define(function(require) {
-
-// 	var module1 = require('./module1');
-
-// 	var module2 = require('./module2');
-
-// 	var print = require('print');
-
-// 	print(module1.getHello());
-
-// 	print(module2.getWelcome());
-
-// });
