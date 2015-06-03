@@ -1,14 +1,10 @@
-define(['gridster', 'jquery', './module1', './module2', 'print'], function(gridster, $, module1, module2, print) {
+define(['jquery', './module1', './module2', 'print'], function($, module1, module2, print) {
 
 	print(module1.getHello());
 
 	print(module2.getWelcome());
 
-
-	$(".gridster ul").gridster({
-        widget_margins: [10, 10],
-        widget_base_dimensions: [140, 140]
-    });
+	$('.area').html(module1.getHello());
 
 });
 
