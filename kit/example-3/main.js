@@ -1,10 +1,7 @@
 requirejs.config({
-    baseUrl: "libs",
-
-    paths: {
-        app: '../app',
-        jquery: 'jquery'
-    }
+	paths: {
+		app: 'app'
+	}
 });
 
 requirejs.onError = function(err) {

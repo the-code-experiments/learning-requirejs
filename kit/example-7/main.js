@@ -1,14 +1,7 @@
 requirejs.config({
     paths: {
         app: 'app'
-    },
-
-    deps: ["app/init"],
-    callback: function() {
-    	console.log("In callback");
-    },
-
-    urlArgs: "bust=" + (new Date()).getTime()
+    }
 });
 
 requirejs.onError = function(err) {
@@ -18,3 +11,5 @@ requirejs.onError = function(err) {
         throw err;
     }
 };
+
+requirejs(['app/init']);

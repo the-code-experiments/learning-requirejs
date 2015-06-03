@@ -1,10 +1,8 @@
-define(['jquery', './module1', './module2', 'print'], function($, module1, module2, print) {
+define(['./module1', './module2', 'libs/print'], function(module1, module2, print) {
 
 	print(module1.getHello());
 
 	print(module2.getWelcome());
-
-	$('.area').html(module1.getHello());
 
 });
 
@@ -15,7 +13,7 @@ define(['jquery', './module1', './module2', 'print'], function($, module1, modul
 
 // 	var module2 = require('./module2');
 
-// 	var print = require('print');
+// 	var print = require('libs/print');
 
 // 	print(module1.getHello());
 

@@ -1,11 +1,3 @@
-define(function() {
-
-	"use strict";
-
-	return {
-		getHello: function() {
-			return "Hello World";
-		}
-	};
-
-});
+function getHelloWorld() {
+    return "Hello World";
+}

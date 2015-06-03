@@ -4,12 +4,12 @@ requirejs.config({
 	paths: {
 		app: '../app',
 		jquery: 'jquery',
-		underscore: 'underscore-min-1-5-2'
+		gridster: 'jquery.gridster.min'
 	},
 
 	shim: {
-		'underscore': {
-			exports: '_'
+		"gridster": {
+			deps: ['jquery']
 		}
 	}
 });
