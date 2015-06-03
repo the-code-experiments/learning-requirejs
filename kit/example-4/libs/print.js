@@ -1,3 +1,8 @@
+/**
+ *	@module: print message on console;
+ *	@params:
+		-> msg: String
+ */
 define(function() {
 
 	"use strict";
