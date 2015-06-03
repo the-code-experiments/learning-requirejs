@@ -1,3 +1,6 @@
+/**
+ *	@module: return a text string;
+ */
 define(function() {
 
 	"use strict";
