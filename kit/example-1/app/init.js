@@ -5,14 +5,15 @@
  *	How to run this example.
  *	1. Open Example-1.html in browser.
  *	2. Press F12, go to console tab.
- *  3. See the message get displayed on that console tab.
+ *	3. See the message get displayed on that console tab.
  */
 
 /**
  *	@function: return a text string;
  */
+
 function getHelloWorld() {
-    return "Hello World";
+	return "Hello World";
 }
 
 /**
@@ -20,8 +21,9 @@ function getHelloWorld() {
  *	@params:
 		-> msg: String
  */
+
 function getWelcome(msg) {
-    return "Hi, " + msg;
+	return "Hi, " + msg;
 }
 
 /**
@@ -29,8 +31,9 @@ function getWelcome(msg) {
  *	@params:
 		-> msg: String
  */
+
 function printMsg(msg) {
-    console.log(msg);
+	console.log(msg);
 }
 
 printMsg(getHelloWorld());

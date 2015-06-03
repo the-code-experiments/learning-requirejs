@@ -5,7 +5,7 @@
  *	How to run this example.
  *	1. Open Example-2.html in browser.
  *	2. Press F12, go to console tab.
- *  3. See the message get displayed on that console tab.
+ *	3. See the message get displayed on that console tab.
  */
 
 printMsg(getHelloWorld());

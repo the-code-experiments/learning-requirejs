@@ -1,6 +1,7 @@
 /**
  *	@function: return a text string;
  */
+
 function getHelloWorld() {
-    return "Hello World";
+	return "Hello World";
 }

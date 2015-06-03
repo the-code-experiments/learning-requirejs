@@ -3,8 +3,7 @@ requirejs.config({
 
 	paths: {
 		app: '../app',
-		jquery: 'jquery',
-		underscore: 'underscore-min-1-5-2'
+		underscore: 'underscore-min-1-8-2'
 	},
 
 	shim: {
@@ -22,4 +21,4 @@ requirejs.onError = function(err) {
     }
 };
 
-requirejs(['app/init']);
+require(['app/init']);

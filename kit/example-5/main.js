@@ -22,4 +22,4 @@ requirejs.onError = function(err) {
     }
 };
 
-requirejs(['app/init']);
+require(['app/init']);
