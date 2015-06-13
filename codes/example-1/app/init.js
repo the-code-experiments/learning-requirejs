@@ -1,6 +1,6 @@
 /**
  *	The goal of this file is to provide the basic understanding:
- *	-> The migration from non-module to module
+ *	-> The non-module way
  *
  *	How to run this example.
  *	1. Open Example-1.html in browser.

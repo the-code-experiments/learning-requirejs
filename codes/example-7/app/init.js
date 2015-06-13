@@ -1,6 +1,6 @@
 /**
  *	The goal of this file is to provide the basic understanding:
- *	-> 	How to global object store
+ *	-> 	How to use global object store
  *
  *	How to run this example.
  *	1. Open Example-7.html in browser.

@@ -1,6 +1,6 @@
 /**
  *	The goal of this file is to provide the basic understanding:
- *	-> 	How to library is AMD compliant.
+ *	-> 	How to know library is AMD compliant.
  *
  *	How to run this example.
  *	1. Open Example-6.html in browser.
