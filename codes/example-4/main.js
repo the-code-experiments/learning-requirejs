@@ -10,7 +10,8 @@ requirejs.config({
 
     paths: {
         app: '../app',
-        jquery: 'jquery'
+       //the following entry can be commented for that it is the default option
+       jquery: 'jquery'
     }
 });
 
